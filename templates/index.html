@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Srevival of a chance on Titanic</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="pclass" id="pclass" placeholder="plcass" step="any">
+            <input type="number" name="age" id="age" placeholder="age" step="any">
+            <input type="number" name="sibsp" id="sibsp" placeholder="sibsp" step="any">
+            <input type="number" name="parch" id="parch" placeholder="parch" step="any">
+            <input type="number" name="fare" id="fare" placeholder="fare" step="any">
+            <input type="number" name="class" id="class" placeholder="class" step="any">
+            <input type="number" name="who" id="who" placeholder="who" step="any">
+            <input type="number" name="adult_male" id="adult_male" placeholder="adult_male" step="any">
+            <input type="number" name="embark_town" id="embark_town" placeholder="embark_town" step="any">
+            <input type="number" name="alive" id="alive" placeholder="alive" step="any">
+            <input type="number" name="alone" id="alone" placeholder="alone" step="any">
+            <input type="number" name="Male" id="Male" placeholder="Male" step="any">
+            <input type="number" name="embarked_encoded" id="embarked_encoded" placeholder="embarked_encoded" step="any">
+            <input type="submit" value="Predict">
+
+        </form>
+    </div>
+</div>
+{% endblock %}
