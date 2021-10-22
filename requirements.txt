@@ -6,6 +6,7 @@ cycler==0.10.0
 decorator==4.4.1
 Flask==1.1.1
 Flask-Cors==3.0.8
+ipython==7.11.1
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
 jedi==0.15.2
@@ -19,9 +20,11 @@ pandas==0.25.3
 parso==0.5.2
 pickleshare==0.7.5
 prompt-toolkit==3.0.2
+pydotplus==2.0.2
 Pygments==2.5.2
 pyparsing==2.4.6
 python-dateutil==2.8.1
+pytz==2019.3
 scikit-learn==0.24.1
 scipy==1.4.1
 six==1.13.0
